@@ -6,11 +6,7 @@ export function getId() {
 export function showRandomMovie(cover, title, description) {
     document.getElementById("movie").style.display = "flex";
 
-    document.getElementById("movieCover").innerHTML = `<img src="${cover}">`;
+    document.getElementById("movieCover").innerHTML = `<img src="${cover}" alt="${title} cover">`;
     document.getElementById("movieTitle").innerHTML = title;
     document.getElementById("movieDescription").innerHTML = description;
-}
-
-export function fetchError() {
-
 }
